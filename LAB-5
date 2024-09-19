@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int num1, num2, sum, difference;
+
+    // Input two integers
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Addition
+    sum = num1 + num2;
+
+    // Subtraction
+    difference = num1 - num2;
+
+    // Output the results
+    printf("Sum: %d\n", sum);
+    printf("Difference: %d\n", difference);
+
+    return 0;
+}
