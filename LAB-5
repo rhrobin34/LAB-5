@@ -19,3 +19,40 @@ int main() {
 
     return 0;
 }
+///not prime 
+
+#include <stdio.h>
+
+int isNotPrime(int n) {
+    if (n <= 1) {
+        return 1; // Not prime
+    }
+    if (n == 2) {
+        return 0; // 2 is prime
+    }
+    if (n % 2 == 0) {
+        return 1; // Other even numbers are not prime
+    }
+
+    for (int i = 3; i * i <= n; i += 2) {
+        if (n % i == 0) {
+            return 1; // Not prime
+        }
+    }
+    return 0; // Prime
+}
+
+int main() {
+    int n;
+    
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    
+    if (isNotPrime(n)) {
+        printf("%d is not a prime number.\n", n);
+    } else {
+        printf("%d is a prime number.\n", n);
+    }
+
+    return 0;
+}
