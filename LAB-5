@@ -86,4 +86,21 @@ int main() {
     
     return 0;
 }
+#include <stdio.h>
+
+int main() {
+    int num1, num2, product;
+
+    // Input two integers
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);
+
+    // Multiplication
+    product = num1 * num2;
+
+    // Output the result
+    printf("Product: %d\n", product);
+
+    return 0;
+}
 
